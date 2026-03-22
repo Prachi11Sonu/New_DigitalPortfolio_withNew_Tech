@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: 231 240 220;
+  --color-primary: 89 116 69;
+  --color-secondary: 101 129 71;
+  --color-accent: 114 151 98;
+  --color-surface: 244 248 239;
+  --color-ink: 34 49 26;
+  --page-bg:
+    radial-gradient(circle at top left, rgba(114, 151, 98, 0.2), transparent 28%),
+    linear-gradient(180deg, #eef6e6 0%, #e7f0dc 52%, #edf5e8 100%);
+  --landing-overlay:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.75), transparent 35%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(231, 240, 220, 0.95));
+  --nav-bg: rgba(231, 240, 220, 0.8);
+  --nav-mobile-bg: rgba(231, 240, 220, 0.95);
+  --nav-border: rgba(255, 255, 255, 0.4);
+  --surface-card: rgba(244, 248, 239, 0.9);
+  --surface-muted: rgba(255, 255, 255, 0.72);
+  --surface-strong: rgba(255, 255, 255, 0.82);
+  --surface-emphasis: rgba(89, 116, 69, 0.08);
+  --surface-contrast: rgba(255, 255, 255, 0.15);
+  --border-soft: rgba(255, 255, 255, 0.6);
+  --focus-surface: rgba(255, 255, 255, 0.84);
+  --action-bg: rgb(89 116 69);
+  --action-hover-bg: rgb(101 129 71);
+  --action-text: #ffffff;
+  --highlight-bg: rgb(89 116 69);
+  --highlight-text: rgba(255, 255, 255, 0.94);
+  --highlight-muted-text: rgba(255, 255, 255, 0.74);
+  --status-error: #dc2626;
+}
+
+.dark-theme {
+  --color-bg: 17 24 20;
+  --color-primary: 206 228 186;
+  --color-secondary: 164 196 138;
+  --color-accent: 122 165 108;
+  --color-surface: 25 34 28;
+  --color-ink: 237 245 231;
+  --page-bg:
+    radial-gradient(circle at top left, rgba(114, 151, 98, 0.12), transparent 28%),
+    linear-gradient(180deg, #101713 0%, #121c16 50%, #17231b 100%);
+  --landing-overlay:
+    radial-gradient(circle at top left, rgba(114, 151, 98, 0.14), transparent 35%),
+    linear-gradient(180deg, rgba(10, 16, 13, 0.16), rgba(17, 24, 20, 0.92));
+  --nav-bg: rgba(17, 24, 20, 0.78);
+  --nav-mobile-bg: rgba(17, 24, 20, 0.94);
+  --nav-border: rgba(255, 255, 255, 0.08);
+  --surface-card: rgba(25, 34, 28, 0.88);
+  --surface-muted: rgba(35, 46, 38, 0.92);
+  --surface-strong: rgba(28, 39, 32, 0.96);
+  --surface-emphasis: rgba(122, 165, 108, 0.18);
+  --surface-contrast: rgba(255, 255, 255, 0.08);
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --focus-surface: rgba(24, 33, 27, 0.95);
+  --action-bg: rgb(190 217 167);
+  --action-hover-bg: rgb(164 196 138);
+  --action-text: rgb(17 24 20);
+  --highlight-bg: rgb(46 64 51);
+  --highlight-text: rgba(237, 245, 231, 0.94);
+  --highlight-muted-text: rgba(206, 228, 186, 0.78);
+  --status-error: #f87171;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg font-body text-ink antialiased;
+  background-image: var(--page-bg);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    background-image 0.3s ease;
+}
+
+* {
+  @apply border-secondary/10;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(89, 116, 69, 0.22);
+}
+
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes scrollRibbon {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-card {
+    @apply rounded-[28px] border bg-surface shadow-card backdrop-blur-sm;
+    border-color: var(--border-soft);
+    background-color: var(--surface-card);
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-bold text-primary sm:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply mt-3 max-w-2xl text-base text-primary/80 sm:text-lg;
+  }
+
+  .pill {
+    @apply inline-flex items-center rounded-full border border-secondary/15 px-3 py-1 text-sm font-medium text-primary shadow-sm;
+    background-color: var(--surface-muted);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-3 font-medium shadow-soft transition duration-300 hover:-translate-y-1;
+    background-color: var(--action-bg);
+    color: var(--action-text);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--action-hover-bg);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-primary/20 px-5 py-3 font-medium text-primary transition duration-300 hover:-translate-y-1 hover:border-primary/40;
+    background-color: var(--surface-muted);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--surface-strong);
+  }
+
+  .theme-toggle {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-primary/15 px-4 py-2 text-primary transition duration-300 hover:-translate-y-1;
+    background-color: var(--surface-muted);
+  }
+
+  .surface-muted {
+    background-color: var(--surface-muted);
+  }
+
+  .surface-strong {
+    background-color: var(--surface-strong);
+  }
+
+  .surface-contrast {
+    background-color: var(--surface-contrast);
+  }
+
+  .surface-emphasis {
+    background-color: var(--surface-emphasis);
+  }
+
+  .highlight-card {
+    background-color: var(--highlight-bg);
+    color: var(--highlight-text);
+  }
+
+  .border-soft {
+    border-color: var(--border-soft);
+  }
+
+  .input-surface {
+    background-color: var(--focus-surface);
+  }
+
+  .status-error {
+    color: var(--status-error);
+  }
+
+  .tech-grid {
+    background-image:
+      linear-gradient(rgba(114, 151, 98, 0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(114, 151, 98, 0.12) 1px, transparent 1px);
+    background-size: 34px 34px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), transparent 85%);
+  }
+
+  .floating-orb {
+    animation: floatY 5s ease-in-out infinite;
+  }
+
+  .ribbon-track {
+    display: flex;
+    width: max-content;
+    gap: 1rem;
+    animation: scrollRibbon 24s linear infinite;
+  }
+
+  .ribbon-chip {
+    @apply inline-flex items-center rounded-full border border-primary/15 px-4 py-2 text-sm font-medium text-primary;
+    background-color: var(--surface-muted);
+  }
+
+  .parallax-shell {
+    isolation: isolate;
+  }
+
+  .parallax-orb {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(20px);
+    opacity: 0.3;
+    animation: floatY 6s ease-in-out infinite;
+    z-index: 0;
+  }
+
+  .parallax-orb-one {
+    top: 10%;
+    right: 12%;
+    width: 9rem;
+    height: 9rem;
+    background: rgba(114, 151, 98, 0.18);
+  }
+
+  .parallax-orb-two {
+    bottom: 12%;
+    left: 8%;
+    width: 7rem;
+    height: 7rem;
+    background: rgba(89, 116, 69, 0.14);
+    animation-duration: 7s;
+  }
+}
