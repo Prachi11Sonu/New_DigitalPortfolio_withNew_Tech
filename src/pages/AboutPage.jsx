@@ -38,8 +38,8 @@ function AboutPage({ theme, toggleTheme }) {
               More about me, my background, and where I’m heading
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-primary/80 sm:text-lg">
-              This page brings your introduction and profile image into one dedicated space,
-              so the home page stays cleaner while your full story remains easy to find.
+              This page introduces who I am, my background, and the journey that led me to
+              explore the world of technology.
             </p>
           </motion.div>
         </div>

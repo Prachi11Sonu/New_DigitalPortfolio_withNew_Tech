@@ -7,8 +7,8 @@ function CertificateGallerySection({ certifications }) {
     <section id="certifications" className="section-shell scroll-mt-24 py-10">
       <SectionHeading
         eyebrow="Certifications"
-        title="Certificate gallery for verified learning milestones"
-        subtitle="A cleaner gallery view that lets visitors preview each credential and open the file directly."
+        title="Certificate Gallery"
+        subtitle="A collection of certificates that reflect my learning journey and the milestones I have achieved along the way."
         variant="centered"
       />
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">

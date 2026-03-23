@@ -12,7 +12,7 @@ function EducationPage({ theme, toggleTheme }) {
         id="education"
         eyebrow="Education"
         title="Academic background and core coursework"
-        subtitle="A dedicated page for academic milestones, degree details, timeline, and coursework."
+        subtitle="My education represents the academic journey that shaped my understanding and interest in the field of technology."
         items={education}
         renderHeader={(item) => (
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">

@@ -37,8 +37,7 @@ function ProjectsSection({ projects, filters, showFilters = true, showViewAll = 
     <section id="projects" className="section-shell scroll-mt-24 py-10">
       <SectionHeading
         eyebrow="Project Command Center"
-        title="Selected work grouped like a mini project control panel"
-        // subtitle="Filter projects by stack and area to quickly scan what I have built across Django, MERN, machine learning, and Java."
+        title="This section highlights the projects I have worked on, showcasing my ideas and the practical work I have completed throughout my learning journey."
         variant="split"
       />
       {showFilters ? (

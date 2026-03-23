@@ -12,7 +12,7 @@ function ExperiencePage({ theme, toggleTheme }) {
         id="experience"
         eyebrow="Experience"
         title="Internships and practical work that shaped my development process"
-        subtitle="A dedicated page for training, hands-on execution, and the work experience that has strengthened your technical growth."
+        subtitle="My experience reflects my journey of working on projects and gaining practical exposure through real-world and academic environments."
         items={experience}
         renderHeader={(item) => (
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
