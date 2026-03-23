@@ -97,7 +97,7 @@ function ContactSection({ personal }) {
       <SectionHeading
         eyebrow="Contact"
         title="Let’s build something thoughtful and useful together"
-        subtitle="Reach out to me through this contact form by writing your name, email ID, and message."
+        subtitle="You can contact me here by sharing your name, email, and message."
       />
       <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
         <motion.div

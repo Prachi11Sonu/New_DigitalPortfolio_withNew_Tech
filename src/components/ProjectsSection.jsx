@@ -36,8 +36,8 @@ function ProjectsSection({ projects, filters, showFilters = true, showViewAll = 
   return (
     <section id="projects" className="section-shell scroll-mt-24 py-10">
       <SectionHeading
-        eyebrow="Project Command Center"
-        title="This section highlights the projects I have worked on, showcasing my ideas and the practical work I have completed throughout my learning journey."
+        eyebrow="Projects"
+        title="These are some of the projects I have worked on during my learning journey."
         variant="split"
       />
       {showFilters ? (

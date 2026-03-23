@@ -7,7 +7,7 @@ export const portfolioData = {
     shortBio:
       "I am a Computer Science and Engineering student at Lovely Professional University with a strong interest in full stack development, Django and MERN applications, data science, machine learning, and creating responsive user-focused digital experiences.",
     about:
-      "I am currently pursuing my B.Tech in Computer Science and Engineering at Lovely Professional University. I enjoy building real-world projects that combine backend logic, clean interfaces, and practical problem solving. My journey so far has included Django applications like a Learning Management System and Todo List website, Java-based desktop development, and data science and machine learning projects that analyze real datasets using NLP, predictive modeling, and visualization tools. I am also currently building an e-commerce website using the MERN stack to strengthen my end-to-end development skills. I aim to grow into a software developer who builds reliable and meaningful technology through both software engineering and intelligent data-driven solutions.",
+      "I am currently pursuing my B.Tech in Computer Science and Engineering at Lovely Professional University. I enjoy building real-world projects that combine backend logic, clean interfaces, and practical problem solving. My journey so far has included Django applications like a Learning Management System and Todo List website, Java-based desktop development, and data science and machine learning projects that analyze real datasets using NLP, predictive modeling, and visualization tools. I am also currently building an e-commerce website using the MERN stack to improve my full stack development skills. My goal is to keep learning and grow into a software developer who can build useful and meaningful solutions.",
     college: "Lovely Professional University, Phagwara, Punjab",
     branch: "Computer Science and Engineering",
     year: "Since August 2023",
@@ -268,7 +268,7 @@ export const portfolioData = {
       techStack: ["Excel", "Python", "Power BI", "Data Analysis", "Visualization"],
       contributions: [
         "Completed structured training in data science and machine learning before moving into project-based evaluation work.",
-        "Worked individually on assigned projects that had to be completed within limited time, helping me improve ownership and execution.",
+        "Worked individually on assigned projects within a limited time, which helped me improve my ownership and execution.",
         "Focused on data cleaning, analysis, and visualization using real-world datasets to extract and present useful insights clearly.",
       ],
     },
@@ -531,7 +531,7 @@ export const portfolioData = {
   codingProfiles: [
     {
       label: "GitHub",
-      description: "A growing space for project repositories, implementation practice, and consistent hands-on development.",
+      description: "I use GitHub to share my projects and keep track of the work I have done.",
       url: "https://github.com/Prachi11Sonu",
       highlight: "Project repositories and version history",
       focus: "Builds, version control, and project documentation",
@@ -545,7 +545,7 @@ export const portfolioData = {
     },
     {
       label: "LeetCode",
-      description: "A dedicated profile for sharpening DSA skills, improving logic, and building consistency through regular practice.",
+      description: "I use LeetCode to practice DSA problems and improve my logic through regular problem solving.",
       url: "https://leetcode.com/u/prachisonu_/",
       highlight: "DSA practice and problem-solving growth",
       focus: "Data structures, algorithms, and interview-style practice",
@@ -561,7 +561,7 @@ export const navLinks = [
   { id: "projects", label: "Projects", href: "/projects" },
   { id: "experience", label: "Experience", href: "/experience" },
   { id: "education", label: "Education", href: "/education" },
-  { id: "certifications", label: "Certifications", href: "/certifications" },
+  { id: "certificates", label: "Certificates", href: "/certificates" },
   { id: "achievements", label: "Achievements", href: "/home#achievements" },
   { id: "problem-solving", label: "Profiles", href: "/home#problem-solving" },
   { id: "contact", label: "Contact", href: "/contact" },

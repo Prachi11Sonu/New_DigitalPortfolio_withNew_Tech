@@ -8,7 +8,7 @@ function CertificateGallerySection({ certifications }) {
       <SectionHeading
         eyebrow="Certifications"
         title="Certificate Gallery"
-        subtitle="A collection of certificates that reflect my learning journey and the milestones I have achieved along the way."
+        subtitle="These certificates show the courses, training, and milestones I have completed so far."
         variant="centered"
       />
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
