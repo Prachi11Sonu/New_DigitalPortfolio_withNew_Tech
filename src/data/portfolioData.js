@@ -561,7 +561,7 @@ export const navLinks = [
   { id: "projects", label: "Projects", href: "/projects" },
   { id: "experience", label: "Experience", href: "/experience" },
   { id: "education", label: "Education", href: "/education" },
-  { id: "certificates", label: "Certificates", href: "/certificates" },
+  { id: "certificates", label: "Certificates", href: "/certifications" },
   { id: "achievements", label: "Achievements", href: "/home#achievements" },
   { id: "problem-solving", label: "Profiles", href: "/home#problem-solving" },
   { id: "contact", label: "Contact", href: "/contact" },

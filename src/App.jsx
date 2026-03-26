@@ -63,6 +63,10 @@ function App() {
         element={<CertificationsPage theme={theme} toggleTheme={toggleTheme} />}
       />
       <Route
+        path="/certificates"
+        element={<CertificationsPage theme={theme} toggleTheme={toggleTheme} />}
+      />
+      <Route
         path="/contact"
         element={<ContactPage theme={theme} toggleTheme={toggleTheme} />}
       />
